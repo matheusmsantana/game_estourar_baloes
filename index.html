@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<script language='Javascript'>
+			
+			function IniciaJogo(){
+				//Aki estou recuperando o value que no caso e o nivel setado pelo usuario atravez do meu id nivel_jogo.
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+				
+				//Funça para alterar a pagina, e concatenando a varival nivel_jogo passo o nivel que foi setado pelo usuario
+				window.location.href = 'jogo.html?'+nivel_jogo;
+				
+				//printado nivel celecionado
+				//alert(nivel_jogo);
+				
+				
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<p>
+				<b>Nível: </b>
+				<select id="nivel_jogo">
+					<option value="1">Facil</option>
+					<option value="2">Medio</option>
+					<option value="3">Difícil</option>
+				</select>
+			</p>
+			<br/>
+			<!--Ao clicar na imagem minha função IniciaJogo() é chamada-->
+			<img src="imagens/iniciar.png" onclick="IniciaJogo()"/>
+		</div>
+		
+	</body>
+	
+</html>

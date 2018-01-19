@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<script src="jogo.js"></script>
+	</head>
+	
+	<!--Chamando minha função ao carregar a pagina-->
+	<body onload="iniciaJogo()">
+		<!--div q contem o tempo, a quantidade de baloes estorados e baloes a estorar-->
+		<div style="float:left;width:auto;heigth:500px;background:#FFF;border:solid 1px #A2A2A2; margin-right: 5px">
+			<table border="0">
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande.png"/>
+					</td>
+					<td>
+						<span id="baloes_inteiros" style="font-size:40px"></span>
+					</td>
+				</tr>	
+			</table>
+			</br>
+						
+			<table border="0">
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande_estourado.png"/>
+					</td>
+					<td>
+						<span id="baloes_estourados" style="font-size:40px"></span>
+					</td>
+				</tr>	
+			</table>
+			</br>
+			
+			<table border="0" style="width: 140px; height:132px;">
+				<tr>
+					<td style="background:url('imagens/cronometro.png');text-align:center;">
+						<!--minha span com id cronometro esta recebendo quantidade de tempo de cada nivel-->
+						<span style="color:red;font-size:30px" id="cronometro"></span>
+					</td>
+				</tr>	
+			</table>
+			
+		</div>
+		
+		<!--div que contem meu cenario de jogo-->
+		<div id="cenario" style="float:left;width:600px;height:500px;background: url('imagens/cenario.png');background-position: bottom;">
+		
+		</div>
+		
+	</body>
+	
+</html>
